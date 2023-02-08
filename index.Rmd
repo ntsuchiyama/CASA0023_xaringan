@@ -16,75 +16,91 @@ output:
 
 class: inverse, center, middle
 
-# add picture of sentinel-2
+# Sentinel-2
+
+```{r echo=FALSE, out.width='60%', fig.align='center'}
+knitr::include_graphics('img/Sentinel-2-MSI_overview.jpg')
+```
+
+(Source: [European Space Agency](https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-2-msi/overview))
+
 
 ---
 
 
-# Summary 
+# Summary (1)
 
-## Sentinel-2 - overview
+Sentinel-2 is a "wide swath, high resolution, multi-spectral imaging mission" operated by the European Space Agency (ESA) [@providereference]. It contributes to applications not only in the priority areas of land monitoring, emergency management and security, but also spatial planning, forest management, water management, acriculture and food security [@providereference].
 
-.pull-left[
-Sentinel 2 is a "wide swath, high resolution, multi-spectral mission" operated by the European Space Agency (ESA) []. A total of 13 bands with 3 different spatial resolutions are sampled by the MultiSpectral Instrument (MSI) it carries - 4 bands at 10m, 6 bands at 20m, 3 bands at 60m (ibid.). 
-.footnote[]
-]
+The following areas have been listed as being covered as part of the Observation Scenario for the mission [@providereference]. 
 
----
-
-# Summary 
-
-## Sentinel-2 - coverage
-
-There are two identical satelites, each with a swath width<sup>1</sup> of 290km: Sentinel 2A (launched 23)[] and Sentinel 2B (launched ) [provide reference]. The following areas have been listed as being covered with the satelites (ibid.). 
-
-- all continental areas (including inland waters) between latitudes 84N and 56S
+- all continental areas (including inland waters) between latitudes 84 degrees North and 56 degrees South
 - all coastal waters up to 20km from shore 
-- all islands that are part of the EU
+- all islands belonging to the EU
 - the Mediterranean Sea
 - all closed seas
 
 ---
 
-# Summary
+# Summary (2) 
 
-## Sentinel-2 - Data products 
+.pull-left[
+There are two identical satelites, Sentinel 2A (launched 23 June 2015) and Sentinel 2B (launched 7 March 2017) [@providereference]. They each have a with a swath width of 290km and operate simultaneously in the same orbit phased at 180 degrees [@providereference]. The MultiSpectral Instrument (MSI) of the satelite operates by passively collecting sunlight reflected from the earth. By passing a filter the light is focused on two focal plane assemblies, one for Visible and Near-Infra-Red bands and the other for Short Wave-Infra-Red bands (ibid). 
+]
 
-The Level-1B product provides Top-of-atmospher radiance in sensor geometry. A single granule On the other hand, the Level-1C 
+.pull-right[
+
+.center[**View on Equator**]
+
+```{r echo=FALSE, out.width='60%', fig.align='center'}
+knitr::include_graphics('img/equator.jpg')
+```
+
+.center[The Twin-Satellite SENTINEL-2 Orbitual Confuguration (courtesy Astrium GmbH) 
+
+(Source: [European Space Agency](https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-2-msi/overview))
+]
+]
+
+
+---
+
+# Summary (3)
+
+There are 13 spectral bands collected by the MSI at three different spatial resolutions, presented in detail in the figure below. The data is available to users via images divided into 100km tiles at two different levels (Level-1C and Level 2A) depending on corrections ().
+
+```{r echo=FALSE, out.width='60%', fig.align='center'}
+knitr::include_graphics('img/wavelength_bandwidth.png')
+```
+
+.center[Wavelengths and Bandwidths of the three Spatial Resolutions of the MSI instrument (Source: [European Space Agency](https://sentinels.copernicus.eu/ar/web/sentinel/missions/sentinel-2/instrument-payload/resolution-and-swath))]
 
 ---
 
 # Applications
 
-## Regional Policy
+## Policy
 
-One of the notable policy applications of Sentinel Data is for the Senitnels for Common Agriculture Policy (Sen4CAP) project. The CAP of the EU is 
+One of the notable policy applications of Sentinel Data is for the Senitnels for Common Agriculture Policy (Sen4CAP) project. 
+The SEN4CAP is operated by the European Space Agency along with DG-Agri, DG-Grow and DG-JRC of the European Commission [@addreference]. There is an particular interest in what the information derived from Sentinel provides for the modernisation and simplification of the CAP in the future (ibid.). 
 
-
-The SEN4CAP is operated by the European Space Agency along with DG-Agri, DG-Grow and DG-JRC of the European Commission. The monitoring approach has allowed for the replacement of physical visits of farms which was stressful for the farmers by data from the Copernicus Sentinels. As 
+One of the notable achievements within this project is the development of a new monitoring approach that has allowed for the replacement of physical visits of farms that was previously necessary for the EU to issue payments [@addreference]. It is said that the usage of earth observation data for monitoring satellite technology will lessen the amount of stress for the farmers (ibid.). 
 
 ---
 
 # Applications 
 
-## International Policy data 
+## Academic Research
+Sentinel-2 data has also been utilised in academic research. For example, @addreference have examined how suitable the information derived from Sentinel-2's MSI is for mapping parameters for the quality of lake water in 9 small and 2 small lakes in Estonia. The comparison between the data collected on chlorophyll a, water color, colored dissolved organic matter and dissolved organic carbon with the Sentinel-2 MSI data demonstrated good correlation with high R<sup>2</sup> values. This indicates the utility of Sentinel-2 data for lake monitoring purposes, based on the availability of data for long periods and frequent and free updates of the imagery (ibid.).   
 
-Sentinel 2 has been 
 
-As the Sentinel-2 mission is
-
-One 
-Although the data from Senitnel has been primarily utilised for agricultural purposes in academic research, such as mapping crop types  
-
-The study conducted by 
 
 ---
 
 # Reflections
 
-Researching about the Sentinel-2 provided me a better understanding of how the sensor operates. This allows for a more sophisticated interpretation of the data that is produced by the sensor. 
+I found the application of Sentinel-2 data for a EU-wide policy framework particularly interesting. The exploration of outer space including the launch of satelites historically has been associated with nationalism, particularly represented in the Space Race during the Cold War Period. However, the whole operation of Sentinel 2 may be thought of a representation of "Europeanisation" of the space industry, hence its application to a regional interest (). At the same time, the utility of remote sensing images for global frameworks is being increasingly recognised, such as the sustainable development goals (). It is interesting to consider the various interests involved in both the production and usage of remote sensing imagery. 
 
-I found the application of the data for both a EU-wide policy and international space particularly interesting. The exploration of outer space including the launch of satelites  space nationalism. The whole operation of Sentinel 2 in the first place may be thought of a representation of "Europeanisation" of the space industry. At the same time, the utility of remote sensing images for global frameworks is being increasingly recognised, as demonstrated in the policy applications for the SDGs. The various interests involved in both the production and usage of remote sensing imagery is 
 ---
 
 # References
